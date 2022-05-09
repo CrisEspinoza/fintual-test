@@ -1,6 +1,6 @@
 
 # API https://marketstack.com/
-token = 'ab93531fea01c9b3c0cbc6a3c911ea2c'
+token = 'f890497f8af3b9fe12eacb830a43757a'
 url  = 'http://api.marketstack.com/v1/eod'
 
 # Flask varaible

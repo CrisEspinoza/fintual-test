@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "fe8c99aa-59ab-43f3-a73f-e0050871dfe0",
+		"name": "Fintual-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "revenue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1818/revenue?end_date=2022-05-01&start_date=2022-04-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1818",
+					"path": [
+						"revenue"
+					],
+					"query": [
+						{
+							"key": "end_date",
+							"value": "2022-05-01"
+						},
+						{
+							"key": "start_date",
+							"value": "2022-04-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1818/price?currency=usd&date=2022-04-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1818",
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "usd"
+						},
+						{
+							"key": "date",
+							"value": "2022-04-01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

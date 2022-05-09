@@ -12,16 +12,17 @@ app = Flask(app)
 def revenue():
     start_date = request.args.get('start_date');
     end_date = request.args.get('end_date');
-    collection = collection = Collection();
+    collection = Collection();
     collection = collection.profit(start_date,end_date);
-    return jsonify(CollectionEncoder().encode(collection));
+    return CollectionEncoder().encode(collection);
 
 @app.route('/price' ,methods=['GET'])
 def price():
     currency = request.args.get('currency');
     date = request.args.get('date');
     response = get(url + "/" + date + "?access_key=" + token + "&symbols=" + currency);
-    return jsonify(response.json());
+    return response.json();
+
 
 # Ejecutar servidor
 if __name__ == '__price__' or '__revenue__' or '__annualized__':
